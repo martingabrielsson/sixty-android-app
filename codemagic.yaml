@@ -7,6 +7,7 @@ workflows:
       groups:
         # Codemagic -> Environment variables, group "sixty_android":
         #   GCLOUD_SERVICE_ACCOUNT_CREDENTIALS = contents of the Google Play service account JSON (secure)
+        - sixty_android
       android_signing:
         # Name of the keystore uploaded in Codemagic -> Code signing identities -> Android
         - sixty_keystore
